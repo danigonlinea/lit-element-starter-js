@@ -1,4 +1,3 @@
-
 import {LitElement, html, css} from 'lit';
 
 import resetCSS from '../css/reset.js';
@@ -12,20 +11,21 @@ import resetCSS from '../css/reset.js';
  */
 export class MyElement extends LitElement {
   static get styles() {
-    return [resetCSS, css`
-      :host {
-        display: block;
-        border: solid 1px black;
-        padding: 8px;
-        max-width: 800px;
+    return [
+      resetCSS,
+      css`
+        :host {
+          display: block;
+          border: solid 1px black;
+          padding: 8px;
+          max-width: 800px;
+        }
 
-       
-      }
-
-      h1 {
-        color: red;
-      }
-    `];
+        h1 {
+          color: red;
+        }
+      `,
+    ];
   }
 
   static get properties() {
